@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap');
+/* reset */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+video {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+textarea,
+input,
+button {
+    font: inherit;
+}
+
+p {
+    line-height: 1.5;
+}
+
+a:any-link {
+    color: #000;
+    cursor: pointer;
+}
+
+a:hover,
+a:visited {
+    color: rgba(0, 0, 0, .5);
+}
+
+/* variables */
+
+:root {
+    /* fonts */
+
+    /* colors */
+
+    --BLACK: #000;
+    --WHITE: #fff;
+}
+
+/* utility classes */
+
+.nowrap {
+    white-space: nowrap;
+}
+
+/* general style */
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+    background-color: rgb(216, 205, 205);
+    scroll-margin: 4rem;
+    font-family: 'Nunito Sans', Georgia;
+}
+
+
+/* header section */
+
+.navbar {
+    display: none;
+}
+
+.header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: var(--BLACK);
+    color: var(--WHITE);
+}
+
+.header {
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4rem;
+    letter-spacing: 1.2px;
+}
+
+.header-h1 {
+    font-weight: normal;
+}
+
+#title {
+    display: none;
+}
+
+
+header.sticky {
+    background-color: var(--BLACK);
+    padding: 5px;
+    color: var(--WHITE);
+}
+
+.footer {
+    padding: 0.5rem;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+/* menu */
+
+header .navbar.active {
+    width: 100%;
+    /*height: calc(100% - 68px);*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--BLACK);
+    z-index: 2;
+}
+
+.header .navbar.active a:any-link{
+    color: var(--WHITE);
+    list-style-type: none;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1.4rem;
+    letter-spacing: 1.5px;
+    display: block;
+}
+
+.header .navbar.active a:hover {
+    color: rgba(24, 94, 199, 0.7);
+    font-weight: bolder;
+    padding: 3px;
+    text-decoration: underline;
+}
+
+.header .navbar {
+    padding: 5px;
+    text-align: center;
+}
+
+.menuToggle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-image: url('../img/menu.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    align-items: center;
+}
+
+
+.menuToggle.active {
+    background-image: url('../img/close.png');
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-origin: center;
+}
+
+header.sticky .menutoggle {
+    filter: invert(1);
+}
+
+/* Footer */
+
+.footer {
+    background-color: var(--BLACK);
+    color: var(--WHITE);
+}
+
+/* section */
+
+section {
+    scroll-margin-top: 5rem;
+}
+
+.container {
+    margin: 1rem; 
+    padding: 1.5rem;
+    background-color: #fff;
+    padding: 10px;
+    text-align: justify;
+}
+
+.container h2 {
+    text-align: center;
+    padding: 1.1rem;
+    text-transform: capitalize;
+    letter-spacing: 1.4px;
+    color: rgb(18, 17, 31);
+}
+
+/* PRESENTATION SECTION */
+
+section {
+    margin-bottom: 2rem;
+}
+
+#presentation {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/home.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    color: var(--BLACK);
+}
+
+#presentation h2,
+#presentation p {
+    text-shadow: 0 0 3px rgba(255, 255, 250, .5);
+    font-weight: bolder;
+    text-align: center;
+}
+
+#presentation h2 {
+    padding: 0.5rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+
+/* OUR WORK SECTION */
+
+picture {
+    padding: 0.5rem;
+}
+
+figure {
+    margin-bottom: 1rem;
+}
+
+figure h3 {
+    text-align: center;
+    font-weight: normal;
+    color: navy;
+}
+
+figure p {
+    text-align: center;
+}
+/* ABOUT SECTION */
+
+#what-we-do {
+    margin-left: 2rem;
+}
+
+/* CONTACT SECTION */
+
+.form-container {
+    position: relative;
+    margin: 1rem;
+    padding: 10px;
+    border: 2px solid #000;
+    box-shadow: 0 0 4px #000;
+    background-color: rgb(177, 229, 233);
+}
+
+input,
+textarea {
+    display: block;
+    width: 100%;
+    resize: none;
+    outline: none;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 10px;
+    border: none;
+}
+
+input {
+    border-radius: 10px;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    cursor: pointer;
+    padding: 10px;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+}
+
+button[type='submit']{
+    background-color: navy;
+}
+
+button[type="submit"]:hover {
+    opacity: 0.8;
+}
+
+button[type="reset"]{
+    margin-left: 20px;
+    background-color: red;
+}
+
+button[type="reset"]:hover {
+    opacity: 0.8;
+}
+
+#contact {
+    min-height: calc(100vh, -20rem);
+}
+
+@media screen and (orientation: landscape){
+    #presentation {
+        height: 85vh;
+        font-size: 1.8rem;
+    }
+
+    #title {
+        display: inline-block;
+    }
+}

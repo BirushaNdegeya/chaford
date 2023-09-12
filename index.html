@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Chaford.org</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="header-h1">CHAFORD <span id="title">INTERNATIONAL</span></h1>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navbar">
+            <li><a href="#work" onclick="toggleMenu();">Our Work</a></li>
+            <li><a href="#about" onclick="toggleMenu();">About us</a></li>
+            <li><a href="#help" onclick="toggleMenu();">How to Help</a></li>
+            <li><a href="#donate" onclick="toggleMenu();">Donate</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Contact us</a></li>
+        </ul>
+    </header>
+    <main class="main">
+
+        <!-- PRESENTATION -->
+
+        <section id="presentation">
+            <div>
+                <h2>Charity For Development</h2>
+                <p>Generous for a better world.</p>
+                <!--
+                    <p>A group of young volunteers with the vision to promote the local development in the sub-Saharan countries.</p>
+                -->
+                </div>
+        </section>
+
+        <!-- OUR WORKS -->
+
+        <section id="work" class="container">
+            <h2>Our Work</h2>
+            <p>Our mission is to promote the local development in the sub-Saharan countries.</p>
+
+            <!-- Images  describe-->
+
+            <picture>
+                <figure>
+                    <img src="img/children-in-a-classroom.jpg" alt="Children in the classroom" title="education">
+                    <figcaption>
+                        <h3>Protection</h3>
+                        <p><abbr title="Charity for development">CHAFORD</abbr> has a set of activities designed to protect children in refugees camps against gender based violence, sexual exploitation and abuse. Therefore, 10 gender committees have been installed to protect and signal to the local authorities every case of violence</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="img/education.jpg" alt="A child learning how to read" title="education">
+                    <figcaption>
+                        <h3>Education</h3>
+                        <p>After war and natural disaster many children, are separated from their parents and most of the parents are unable to educate their children due to poverty</p>
+                        <p>CHAFORD brings education assistance to orphans, refugees and <abbr title="Internal Displaced Children">IDPs</abbr></p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="img/nutrition.jpg" alt="Orphans eating rice and beans at Bulengo peace festival" title="Health and Nutrition">
+                    <figcaption>
+                        <h3>Health and Nutrition</h3>
+                        <p>In refugee camps and orphanage, <abbr title="Charity For Development">CHAFORD</abbr> collects foods and money for parents to help them assure a good alimentation to their children. The money is raised in the fundraising campaign. <a href="#donate">Donate now</a></p>
+                    </figcaption>
+                </figure>
+            </picture>
+        </section>
+
+        <!-- ABOUT SECTION -->
+
+        <section id="about" class="container">
+            <h2>About us</h2>
+            <p><abbr title="Charity For Orphans Refugees and internal displaced people">Charford</abbr> International, is a non profit organization created in 2023 during the war caused by M23 rebellions in the eastern region of the Republic Democratic of the Congo.</p>
+            <p>With a variety of entrepreneurial activities, in education and agrobusiness through the chaford Training center and Chaford agrobis, Chaford internatinal has other branches that help fund diverse activities designed to address specific causes of extreme poverty in communities across the subsaharian countries. These programmes are guided by these seven thematiques focus areas:</p>
+            <ol id="what-we-do">
+                <li>Education</li>
+                <li>Health and Nutrition</li>
+                <li>Peace Building</li>
+                <li>Gender Equality</li>
+                <li>Emergercies</li>
+                <li>Climate and Environment</li>
+                <li>Evangelism</li>
+            </ol>
+
+            <!-- Images -->
+            <video src="video/Copie de Photoshop Fantasy  Photo Manipulation - Photoshop CC Tutorial.mp4" controls poster="img/nutrition.jpg"></video>
+        </section>
+
+        <!-- HOW TO HELP -->
+
+        <section id="help" class="container">
+            <h2>How to Help</h2>
+            <p>
+                Generosity doesn't necessarily mean financial mean, you can give your time to vulunteer, or use your talent and experience to contribute for the well being of others. Nevertheless, your financial contribution is well appreciated. !
+            </p>
+            <p>
+                You can also help fundraising in your community, for the Charity for orphans refugees and internal displaced people programs.
+            </p>
+            <p>
+               Every year, Chaford International offers three different prizes to our donors for their contributions. The certificate of recognition is given to anybody who gives their time or use their talent and experience for the well being of the most vulnerable. The golden price for generous people is offered to thank anybody who contribute financially or fund any of the CHAFORD project or Activities.
+            </p>
+        </section>
+
+        <!-- DONATE -->
+
+        <section id="donate" class="container">
+            <h2>How to Donate</h2>
+            <p>
+                Equity bank 2882890002884
+            </p>
+            <p>If Equity bank is not available in your country you can contanct our finances officers for Futher guidance, below is the contact : whatsapp, <a href="tel:+243993101237">+243993101237</a></p>
+        </section>
+
+        <!-- CONTACT -->
+
+        <section id="contact" class="container">
+            <div class="form-container">
+                <form action="index.html">
+                    <h2>Send Us a Message</h2>
+                    <input type="text" name="userName" id="userName" class="userName" placeholder="Full Name" required>
+                    <input type="email" name="userEmail" id="userEmail" class="userEmail" placeholder="Email" required>
+                    <textarea name="userMessage" id="userMessage" placeholder="Your Message !"></textarea>
+                    <button type="submit">SUBMIT</button>
+                    <button type="reset">RESET</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Copyright &copy; <time id="year"></time> Charford International</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
