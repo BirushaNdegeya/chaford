@@ -1,0 +1,56 @@
+
+.mission {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+.mission .col {
+   display: flex;
+   /* justify-content: center; */
+   align-items: center;
+   flex-direction: column;
+}
+
+.mission .col a {
+   color: white;
+   text-decoration: none;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+
+.mission .col a:hover {
+   font-weight: 700;
+   text-decoration: underline;
+}
+
+.box-1 {
+   width: 80%;
+}
+.box-2 {
+   width: 20%;
+}
+
+.social-section > link > img {
+   width: 40px;
+   height: 40px;
+}
+
+
+@media (max-width: 576px) {
+   footer {
+      text-align: center;
+   }
+   .box-1 {
+      width: 100%;
+      align-items: center;
+   }
+   .box-2 {
+      width: 100%;
+   }
+   .mission {
+      flex-direction: column;
+   }
+}
