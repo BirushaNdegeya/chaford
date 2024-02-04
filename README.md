@@ -1,8 +1,3 @@
-# React + Vite
+# CHAFORD
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Chez CHAFORD, notre mission est de favoriser le développement de l'Afrique subsaharienne en encourageant l'entreprenariat, en facilitant l'accès à l'éducation et en accompagnant les jeunes réfugiés, déplacés et orphelins. Vous pouvez soutenir notre programme de tutorat pour les enfants en faisant un don ou en devenant bénévole dès maintenant. Ce programme offre un soutien éducatif crucial aux enfants vulnérables, les aidant à surmonter les obstacles académiques et favorisant leur réussite scolaire et leur développement personnel. Rejoignez-nous dans cette noble cause pour transformer la vie des enfants en Afrique subsaharienne grâce à l'éducation.
