@@ -14,9 +14,9 @@ const HomePage = () => {
 
          <div className="homebanner">
             <div className="container">
-               <h1>CHARITY FOR DEVELOPMENT</h1>
-               <p className="lead">Generous for a better world</p>
-               <p className="lead">Les activités de CHAFORD comprennent l'éducation, la santé et la nutrition, la constructiona de la paix, l'égalité des genres, les urgences, le climat et l'environnement, ainsi que l'évangélisme et le mentorat des enfants et des adultes</p>
+               <h1 className="display-1" style={{ fontWeight: '700'}}>CHARITY FOR DEVELOPMENT</h1>
+               <p className="lead" style={{ fontWeight: '700'}}>Generous for a better world</p>
+               <p className="lead" style={{ fontWeight: '700'}}>Les activités de CHAFORD comprennent l'éducation, la santé et la nutrition, la constructiona de la paix, l'égalité des genres, les urgences, le climat et l'environnement, ainsi que l'évangélisme et le mentorat des enfants et des adultes</p>
             </div>
          </div>
 

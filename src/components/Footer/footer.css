@@ -2,12 +2,10 @@
 .mission {
    display: flex;
    justify-content: space-between;
-   flex-wrap: wrap;
 }
 
 .mission .col {
    display: flex;
-   /* justify-content: center; */
    align-items: center;
    flex-direction: column;
 }
@@ -33,9 +31,17 @@
    width: 20%;
 }
 
-.social-section > link > img {
+.social-section > a > img {
    width: 40px;
    height: 40px;
+}
+
+.social-section > a > img:hover svg {
+   color: red;
+}
+
+.social-section {
+   background-color: red!important;
 }
 
 
@@ -52,5 +58,9 @@
    }
    .mission {
       flex-direction: column;
+   }
+   footer > .container > .social-section {
+      display: flex;
+      flex-direction: column !important;
    }
 }
