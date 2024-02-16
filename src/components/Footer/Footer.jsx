@@ -1,52 +1,65 @@
 import React from "react";
+import Container from "react-bootstrap/Container";
+import { Row, Col } from "react-bootstrap";
 import { Link } from 'react-router-dom';
-import facebook from '../../assets/icons/icon-facebook.svg';
-import instagram from '../../assets/icons/icon-instagram.svg';
-import twitter from '../../assets/icons/icon-twitter.svg';
-import youtube from '../../assets/icons/youtube.svg';
+import { 
+   FaFacebook, 
+   FaInstagram, 
+   FaLinkedin, 
+   FaTwitter, 
+   FaYoutube 
+} from "react-icons/fa";
+
+import './footer.css';
 
 const Footer = () => {
+   const date = new Date();
+   const year = date.getFullYear();
+ 
    return (
-  
-      <footer className="row text-white" style={{ backgroundColor: '#052c65'}}>
-         <div className="container">
-            <div className="container d-flex justify-content-between">
-               <div className="row container mission py-3">
-                  <div className="col pb-2 box-1">
-                     <h1 className="lead">Notre mission chez CHAFORD est de favoriser le développement de l'Afrique subsaharienne en encourageant l'entreprenariat, en facilitant l'accès à l'éducation et en accompagnant les jeunes réfugiés, déplacés et orphelins. En tant qu'organisation à but non lucratif, nous vous invitons à faire un don ou à devenir bénévole dès maintenant !</h1>
-                  </div>
-                  <div className="col box-2">
-                     <h1 className="lead">Site Map</h1>
-                     <Link>Acceuil</Link>
-                     <Link>Notre travail</Link>
-                     <Link>A Propos</Link>
-                     <Link>Nous aider</Link>
-                     <Link>Donate</Link>
-                     <Link>Nous Contact</Link>
-                  </div>
-               </div>
-            </div>
-            <div className="social-section container my-5 row justify-content-between align-items-center">
-               <p className="lead my-3 col-md-6 text-center text-md-left mb-2 mb-md-0">&copy; CHAFORD { new Date().getFullYear()} - All rights reserved.</p>
-               <div className="d-flex justify-content-center my-3 col-md-6 text-center text-md-right" style={{ 
-                  alignItems: 'center',
-                  columnGap: '1em',
-               }}>
+      <footer>
+         <Container>
+            {/* Mission Footer | Site Map Section */}
+            <Row className="pt-5 flex-item">
+               <Col md={8}>
+                  <p className="lead mission">Notre mission chez CHAFORD est de favoriser le développement de l'Afrique subsaharienne en encourageant l'entreprenariat, en facilitant l'accès à l'éducation et en accompagnant les jeunes réfugiés, déplacés et orphelins. En tant qu'organisation à but non lucratif, nous vous invitons à faire un don ou à devenir bénévole dès maintenant !</p>
+               </Col>
+               <Col md={4} className="my-link-container">
+                  <h4 className="sitemap">Site Map</h4>
+                  <Link>Acceuil</Link>
+                  <Link>Notre travail</Link>
+                  <Link>A Propos</Link>
+                  <Link>Nous aider</Link>
+                  <Link>Donate</Link>
+                  <Link>Nous Contact</Link>
+               </Col>
+            </Row>
+
+            {/* Copyright | social section */}
+
+            <Row className="py-5">
+               <Col md={8}>
+                  <p className="copyright">&copy; CHAFORD {year} - All rights reserved.</p>
+               </Col>
+               <Col md={4} className="social-media">
                   <Link>
-                     <img src={facebook} alt="facebook logo" />
+                     <FaFacebook />
                   </Link>
                   <Link>
-                     <img src={instagram} alt="instagram logo" />
+                     <FaInstagram />
                   </Link>
                   <Link>
-                     <img src={twitter} alt="twitter logo" />
+                     <FaLinkedin />
                   </Link>
                   <Link>
-                     <img src={instagram} alt="instagram logo" />
+                     <FaTwitter />
                   </Link>
-               </div>
-            </div>
-         </div>
+                  <Link>
+                     <FaYoutube />
+                  </Link>
+               </Col>
+            </Row>
+         </Container>
       </footer>
    );
 };

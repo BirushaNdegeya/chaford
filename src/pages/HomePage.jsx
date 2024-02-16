@@ -1,4 +1,5 @@
 import React from "react";
+import { Container } from "react-bootstrap";
 import banner1 from '../assets/images/presentation1.jpg';
 import banner2 from '../assets/images/education.jpg';
 import banner3 from '../assets/images/TeachAdult.png';
@@ -8,16 +9,16 @@ import banner6 from '../assets/images/photo1.jpg';
 
 const HomePage = () => {
    return (
-      <div className="home" style={{ width: '100%'}}>
+      <div className="home">
 
          {/* step 1 */}
 
          <div className="homebanner">
-            <div className="container">
-               <h1 className="display-1" style={{ fontWeight: '700'}}>CHARITY FOR DEVELOPMENT</h1>
-               <p className="lead" style={{ fontWeight: '700'}}>Generous for a better world</p>
-               <p className="lead" style={{ fontWeight: '700'}}>Les activités de CHAFORD comprennent l'éducation, la santé et la nutrition, la constructiona de la paix, l'égalité des genres, les urgences, le climat et l'environnement, ainsi que l'évangélisme et le mentorat des enfants et des adultes</p>
-            </div>
+            <Container>
+               <h1>CHARITY FOR DEVELOPMENT</h1>
+               <p className="lead">Generous for a better world</p>
+               <p className="lead">Les activités de CHAFORD comprennent l'éducation, la santé et la nutrition, la constructiona de la paix, l'égalité des genres, les urgences, le climat et l'environnement, ainsi que l'évangélisme et le mentorat des enfants et des adultes</p>
+            </Container>
          </div>
 
          {/* step 2 */}
@@ -61,7 +62,7 @@ const HomePage = () => {
          
          <section className="container py-5">
             <div id="carouselExampleDark" class="carousel carousel-dark slide">
-               <div class="carousel-indicators">
+               <div className="carousel-indicators">
                   <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
                   <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
                   <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
@@ -90,12 +91,12 @@ const HomePage = () => {
                   </div>
                   </div>
                   <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                     <span class="visually-hidden">Precedent</span>
+                     <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                     <span className="visually-hidden">Precedent</span>
                   </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                     <span class="visually-hidden">Suivant</span>
+                  <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                     <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                     <span className="visually-hidden">Suivant</span>
                   </button>
                </div>
             </section>

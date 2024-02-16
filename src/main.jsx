@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import HomePage from './pages/HomePage';
-import Contact from './pages/Contact';
+import Contact from './pages/Contact/Contact';
 import About from './pages/About';
 import Donate from './pages/Donate';
 import HowToHelp from './pages/HowToHelp';
@@ -14,6 +14,8 @@ import {
 } from 'react-router-dom';
 import Layout from './components/Layout';
 import './index.css';
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/js/bootstrap.bundle.js';
 
 const App = () => {
    return (
