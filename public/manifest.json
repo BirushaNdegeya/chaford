@@ -16,11 +16,5 @@
          "sizes": "72x72",
          "type": "image/svg"
       }
-   ],
-   "related_applications": [
-      {
-         "platform": "play",
-         "url": "https://chaford.vercel.app/"
-      }
    ]
 }
