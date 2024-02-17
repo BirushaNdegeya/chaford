@@ -1,13 +1,9 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
 import { Row, Col } from "react-bootstrap";
-<<<<<<< HEAD
 import { Link } from 'react-router-dom';
 import { TfiEmail } from "react-icons/tfi";
 import { PiPhoneCallFill } from "react-icons/pi";
-=======
-import { Link, NavLink } from 'react-router-dom';
->>>>>>> 08d232dc573685aa17efd0d013f9d6329c138153
 import { 
    FaFacebook, 
    FaYoutube,
