@@ -3,7 +3,7 @@
    "short_name": "chaford",
    "start_url": ".",
    "display": "standalone",
-   "background_color": "#fff",
+   "background_color": "#99aab5 ",
    "description": "A non-profit organization work in education.",
    "icons": [
       {
