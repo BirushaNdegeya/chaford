@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import HomePage from './pages/HomePage';
 import Contact from './pages/Contact/Contact';
-import About from './pages/About';
-import Donate from './pages/Donate';
-import HowToHelp from './pages/HowToHelp';
-import OurWork from './pages/OurWork';
+import OurTeam from './pages/NotreEquipe/OurTeam';
+import Donate from './pages/Donate/Donate';
+import HowToHelp from './pages/CommentAiderBenevolant/HowToHelp';
+import OurWork from './pages/NotreTravail/OurWork';
 import NotFound from './pages/NotFound/NotFound';
 import {
    BrowserRouter,
@@ -23,7 +23,7 @@ const App = () => {
          <Routes>
             <Route path='/' element={<Layout />}>
                <Route index element={<HomePage />} />
-               <Route path='a-propos' element={<About />} />
+               <Route path='notre-equipe' element={<OurTeam />} />
                <Route path='notre-travail' element={<OurWork />} />
                <Route path='comment-aider' element={<HowToHelp />} />
                <Route path='donate' element={<Donate />} />

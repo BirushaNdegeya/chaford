@@ -14,7 +14,6 @@ import './footer.css';
 
 const Footer = () => {
    const date = new Date();
-   const divine = 'girl';
    const year = date.getFullYear();
  
    return (
@@ -29,7 +28,7 @@ const Footer = () => {
                   <h4 className="sitemap">Site Map</h4>
                   <Link to="/">Acceuil</Link>
                   <Link to="/notre-travail">Notre travail</Link>
-                  <Link to="/a-propos">A Propos</Link>
+                  <Link to="/notre-equipe">Notre equipe</Link>
                   <Link to="/comment-aider">Nous aider</Link>
                   <Link to="/donate">Donate</Link>
                   <Link to="/contact">Nous Contact</Link>

@@ -1,0 +1,22 @@
+@font-face {
+   font-family: MyCustomFont;
+   src: url('../../assets/fonts/CursedTimerUlil-Aznm.ttf');
+}
+
+.donate {
+   text-align: center;
+}
+
+.donate .mycustom {
+   font-family: MyCustomFont;
+}
+
+.donate > p a svg {
+   width: 60px;
+   height: 60px;
+   color: #0dcaf0;
+}
+
+.donate > p a svg:hover {
+   opacity: .7;
+}
