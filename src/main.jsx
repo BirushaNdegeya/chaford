@@ -21,13 +21,13 @@ const App = () => {
    return (
       <BrowserRouter>
          <Routes>
-            <Route element={<Layout />}>
-               <Route path='/' element={<HomePage />} />
-               <Route path='/about' element={<About />} />
-               <Route path='/ourwork' element={<OurWork />} />
-               <Route path='howtohelp' element={<HowToHelp />} />
-               <Route path='/donate' element={<Donate />} />
-               <Route path='/contact' element={<Contact />} />
+            <Route path='/' element={<Layout />}>
+               <Route index element={<HomePage />} />
+               <Route path='a-propos' element={<About />} />
+               <Route path='notre-travail' element={<OurWork />} />
+               <Route path='comment-aider' element={<HowToHelp />} />
+               <Route path='donate' element={<Donate />} />
+               <Route path='contact' element={<Contact />} />
             </Route>
             <Route path='*' element={<NotFound />} />
          </Routes>

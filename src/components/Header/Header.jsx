@@ -32,13 +32,13 @@ const Header = () => {
                         </li>
                         <li className="nav-item">
                            <NavLink 
-                              to='/ourwork' 
+                              to='/notre-travail' 
                               className={`nav-link ${({ isActive }) => isActive ? 'active' : null}`}>Notre Travail</NavLink>
                         </li>
                         <li className="nav-item">
                            <NavLink 
                               className={`nav-link ${({ isActive }) => isActive ? 'active' : null}`}
-                              to='/about'>Notre Equipe</NavLink>
+                              to='/a-propos'>Notre Equipe</NavLink>
                         </li>
                         <li className="nav-item">
                            <NavLink 
@@ -46,9 +46,9 @@ const Header = () => {
                               className={`nav-link ${({ isActive }) => isActive ? 'active' : null}`}>Donate</NavLink>
                         </li>
                         <li className="nav-item">
-                           <Link 
+                           <NavLink 
                               to='/contact' 
-                              className={`nav-link ${({isActive}) => isActive ? 'active' : null}`}>Nous Contacter</Link>
+                              className={`nav-link ${({isActive}) => isActive ? 'active' : null}`}>Nous Contacter</NavLink>
                         </li>
                   </ul>
                </div>

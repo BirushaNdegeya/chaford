@@ -7,13 +7,13 @@
    padding: 0;
    box-sizing: border-box;
    font-family: "Nunito Sans";
+   scroll-behavior: smooth;
 }
 
 html {
    font-family: "Nunito Sans";
-}
-.main {
-   width: 100%;
+   background-color: #f5f5f5;
+   font-size: 16px;
 }
 
 .homebanner {

@@ -9,19 +9,19 @@ import {
    FaTwitter, 
    FaYoutube 
 } from "react-icons/fa";
+import { Link } from 'react-router-dom';
+import './contact.css';
 
 
 const Contact = () => {
    return (
-      <div className='contact-wrapper'>
-
-         <Container>
-            <h1 className='my-5 text-center'>Nous Contactez</h1>
-            <Row className='my-5'>
-
-               <Col md={8}>
-                  <Row style={{ width: '80%', margin: '0px auto', boxShadow: '1.34px 2.48px 3px #052c65', padding: '2rem'}}>
-                     <h2>Ecrivez Nous un message</h2>
+      <Container>
+         <h1 className='my-5 text-center'>Nous Contactez</h1>
+         <Row className='my-5'>
+            <Col md={8}>
+               <Row className='contact-wrapper'>
+                  <h2 className='mb-3'>Ecrivez Nous un message</h2>
+                  <div className="form-wrapper">
                      <div class="mb-3">
                         <label htmlFor="userName" className="form-label">Votre Nom</label>
                         <input type="text" className="form-control" placeholder="Nom" />
@@ -35,42 +35,58 @@ const Contact = () => {
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                      </div>
                      <button className="btn btn-primary">Envoyez</button>
-                  </Row>
-               </Col>
-               <Col md={4}>
-                  <h2>Nous Parler</h2>
-                  <Row> 
+                  </div>
+               </Row>
+            </Col>
+            <Col md={4} className='loc-wrapper'>
+               <h2 className='mb-3'>Nous Parler</h2>
+                  <div className='loc-line'>
+                     <TfiEmail />
                      <div>
-                        <TfiEmail />
-                        <div>
-                           <p>EMAIL</p>
-                        </div>
+                        <p>EMAIL</p>
+                        <p>chaford2024@gmail.com</p>
                      </div>
+                  </div>
+
+                  <div className='loc-line'>
+                     <PiPhoneCallFill />
                      <div>
-                        <PiPhoneCallFill />
-                        <div>
-                           <p>TELEPHONE</p>
-                           <p>+243 971 616 131</p>
-                        </div>
+                        <p>TELEPHONE</p>
+                        <p>+243 971 616 131</p>
                      </div>
+                  </div>
+
+                  <div className='loc-line'>
+                     <FaLocationDot />
                      <div>
-                        <FaLocationDot />
-                        <div>
-                           <p>ADRESSE</p>
-                           <h3>RD Congo Nord-Kivu,</h3>
-                           <h3>GOMA, NDOSHO</h3>
-                        </div>
+                        <p>ADRESSE</p>
+                        <p>RD Congo Nord-Kivu,</p>
+                        <p>GOMA, NDOSHO</p>
                      </div>
-                     <h4>Suivez nous sur:</h4>
-                     <FaFacebook />
-                     <FaYoutube />
-                     <FaTwitter />
-                     <FaLinkedin />
-                  </Row>
-               </Col>
-            </Row>
-         </Container>
-      </div>
+                  </div>
+
+                  <h4 className='my-3'>Suivez nous sur:</h4>
+                  <div className="conct-social">
+                     <Link>
+                        <FaFacebook />
+                     </Link>
+                     <Link>
+                        <FaYoutube />
+                     </Link>
+                     <Link>
+                        <FaTwitter />
+                     </Link>
+                     <Link>
+                        <FaLinkedin />
+                     </Link>
+
+                  </div>
+            </Col>
+         </Row>
+         <Row className='my-5'>
+            <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=29.17650640010834%2C-1.6400567723011859%2C29.17949974536896%2C-1.6384802788544266&amp;layer=mapnik"></iframe>
+         </Row>
+      </Container>
    );
 };
 

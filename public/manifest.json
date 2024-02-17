@@ -1,9 +1,8 @@
 {
    "name": "Charity For Development",
    "short_name": "chaford",
-   "start_url": "./",
    "display": "standalone",
-   "background_color": "#fff",
+   "background_color": "#99aab5 ",
    "description": "A non-profit organization work in education.",
    "icons": [
       {
@@ -15,12 +14,6 @@
          "src": "favicon.svg",
          "sizes": "72x72",
          "type": "image/svg"
-      }
-   ],
-   "related_applications": [
-      {
-         "platform": "play",
-         "url": "https://chaford.vercel.app/"
       }
    ]
 }

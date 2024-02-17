@@ -2,12 +2,12 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import { Row, Col } from "react-bootstrap";
 import { Link } from 'react-router-dom';
+import { TfiEmail } from "react-icons/tfi";
+import { PiPhoneCallFill } from "react-icons/pi";
 import { 
    FaFacebook, 
-   FaInstagram, 
-   FaLinkedin, 
-   FaTwitter, 
-   FaYoutube 
+   FaYoutube,
+   FaWhatsapp
 } from "react-icons/fa";
 
 import './footer.css';
@@ -26,12 +26,12 @@ const Footer = () => {
                </Col>
                <Col md={4} className="my-link-container">
                   <h4 className="sitemap">Site Map</h4>
-                  <Link>Acceuil</Link>
-                  <Link>Notre travail</Link>
-                  <Link>A Propos</Link>
-                  <Link>Nous aider</Link>
-                  <Link>Donate</Link>
-                  <Link>Nous Contact</Link>
+                  <Link to="/">Acceuil</Link>
+                  <Link to="/notre-travail">Notre travail</Link>
+                  <Link to="/a-propos">A Propos</Link>
+                  <Link to="/comment-aider">Nous aider</Link>
+                  <Link to="/donate">Donate</Link>
+                  <Link to="/contact">Nous Contact</Link>
                </Col>
             </Row>
 
@@ -42,19 +42,19 @@ const Footer = () => {
                   <p className="copyright">&copy; CHAFORD {year} - All rights reserved.</p>
                </Col>
                <Col md={4} className="social-media">
-                  <Link>
+                  <Link to="https://web.facebook.com/Chaford2024">
                      <FaFacebook />
                   </Link>
-                  <Link>
-                     <FaInstagram />
+                  <Link to="https://api.whatsapp.com/send?phone=243971616131">
+                     <FaWhatsapp />
                   </Link>
-                  <Link>
-                     <FaLinkedin />
+                  <Link to="mailto:youremail@chaford2024@gmail.com">
+                     <TfiEmail />
                   </Link>
-                  <Link>
-                     <FaTwitter />
+                  <Link to="tel:+243971616131">
+                     <PiPhoneCallFill />
                   </Link>
-                  <Link>
+                  <Link to="https://www.youtube.com/channel/YOUR_CHANNEL_ID">
                      <FaYoutube />
                   </Link>
                </Col>

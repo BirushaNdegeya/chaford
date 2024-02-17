@@ -4,8 +4,8 @@ import banner1 from '../assets/images/presentation1.jpg';
 import banner2 from '../assets/images/education.jpg';
 import banner3 from '../assets/images/TeachAdult.png';
 import teachKid from '../assets/images/TeachKid.png';
-import banner5 from '../assets/images/welcome.jpg';
-import banner6 from '../assets/images/photo1.jpg';
+// import banner5 from '../assets/images/welcome.jpg';
+// import banner6 from '../assets/images/photo1.jpg';
 
 const HomePage = () => {
    return (
@@ -69,15 +69,15 @@ const HomePage = () => {
                </div>
                <div className="carousel-inner">
                   <div className="carousel-item active" data-bs-interval="10000">
-                     <img src={banner2} class="d-block w-100" alt="..." />
+                     <img src={banner2} className="d-block w-100" alt="..." />
                      <div className="carousel-caption d-none d-md-block">
                      <h5>Education</h5>
                      <p>L'education est plus importante.</p>
                      </div>
                   </div>
                   <div className="carousel-item" data-bs-interval="2000">
-                     <img src={banner3} class="d-block w-100" alt="..." />
-                     <div class="carousel-caption d-none d-md-block">
+                     <img src={banner3} className="d-block w-100" alt="..." />
+                     <div className="carousel-caption d-none d-md-block">
                      <h5>Second slide label</h5>
                      <p>Some representative placeholder content for the second slide.</p>
                      </div>
@@ -85,8 +85,8 @@ const HomePage = () => {
                   <div className="carousel-item">
                      <img src={banner1} className="d-block w-100" alt="..." />
                      <div className="carousel-caption d-none d-md-block">
-                     <h5>Third slide label</h5>
-                     <p>Some representative placeholder content for the third slide.</p>
+                     <h5>Nos activites humanitaires</h5>
+                     <p>Certains moments on organise des activites pour aider les jeunes gens vulnérables.</p>
                      </div>
                   </div>
                   </div>
