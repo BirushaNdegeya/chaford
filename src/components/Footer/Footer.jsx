@@ -42,7 +42,7 @@ const Footer = () => {
                   <p className="copyright">&copy; CHAFORD {year} - All rights reserved.</p>
                </Col>
                <Col md={4} className="social-media">
-                  <Link>
+                  <Link to="https://web.facebook.com/Chaford2024">
                      <FaFacebook />
                   </Link>
                   <Link>
