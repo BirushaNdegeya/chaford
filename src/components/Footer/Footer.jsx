@@ -14,6 +14,7 @@ import './footer.css';
 
 const Footer = () => {
    const date = new Date();
+   const divine = 'girl';
    const year = date.getFullYear();
  
    return (
