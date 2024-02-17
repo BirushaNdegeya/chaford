@@ -1,6 +1,10 @@
 {
    "name": "Charity For Development",
    "short_name": "chaford",
+<<<<<<< HEAD
+=======
+   "start_url": ".",
+>>>>>>> 08d232dc573685aa17efd0d013f9d6329c138153
    "display": "standalone",
    "background_color": "#99aab5 ",
    "description": "A non-profit organization work in education.",
