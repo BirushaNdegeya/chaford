@@ -1,9 +1,9 @@
 import React from "react";
-import Header from './Header/Header';
-import Footer from './Footer/Footer';
+import Header from '../components/Header/Header';
+import Footer from '../components/Footer/Footer';
 import { Outlet } from "react-router-dom";
 
-const Layout = () => {
+const LayoutRoute = () => {
    return (
       <React.Fragment>
          <Header />
@@ -13,4 +13,4 @@ const Layout = () => {
    );
 };
 
-export default Layout;
+export default LayoutRoute;
