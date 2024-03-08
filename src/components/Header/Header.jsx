@@ -38,7 +38,7 @@ const Header = () => {
                         <li className="nav-item">
                            <NavLink 
                               className={`nav-link ${({ isActive }) => isActive ? 'active' : null}`}
-                              to='/notre-equipe'>Notre Equipe</NavLink>
+                              to='/notre-equipee'>Notre Equipe</NavLink>
                         </li>
                         <li className="nav-item">
                            <NavLink 

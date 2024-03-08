@@ -23,37 +23,38 @@ const router = createBrowserRouter([
       children: [
          {
             path: '/',
-            element: <HomePage />
+            element: <HomePage />,
          },
          {
             path: 'notre-equipe',
+            element: <OurTeam />
+         },
+         {
+            path: 'notre-travail',
+            element: <OurWork />
+         },
+         {
+            path: 'comment-aider',
+            element: <HowToHelp />
+         },
+         {
+            path: 'donate',
+            element: <Donate />
+         },
+         {
+            path: 'contact',
+            element: <Contact />
+         },
+         {
+            path: '*',
+            element: <NotFound />
          }
       ]
    },
-   {
-      path: '*',
-      element: <NotFound />
-   }
 ]);
 
 
-const App = () => {
-   return (
-      <BrowserRouter>
-         <Routes>
-            <Route path='/' element={<Layout />}>
-               <Route index element={<HomePage />} />
-               <Route path='notre-equipe' element={<OurTeam />} />
-               <Route path='notre-travail' element={<OurWork />} />
-               <Route path='comment-aider' element={<HowToHelp />} />
-               <Route path='donate' element={<Donate />} />
-               <Route path='contact' element={<Contact />} />
-            </Route>
-            <Route path='*' element={<NotFound />} />
-         </Routes>
-      </BrowserRouter>
-   );
-};
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<RouterProvider router={router} />);
+root.render(
+   <RouterProvider router={router} />
+);
