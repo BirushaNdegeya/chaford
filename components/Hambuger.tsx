@@ -13,15 +13,15 @@ export default function Hambuger() {
       <div className="lg:hidden hover:cursor-pointer transition-all" onClick={changeIcon}>
          {isOpen ? (
             <AiFillCloseSquare
-               color='white'
                size={40}
+               className='fill-slate-800'
             />
 
          ) : (
 
             <AiOutlineMenu
-               color='white'
                size={40}
+               className='fill-slate-800'
             />
          )}
       </div>

@@ -13,9 +13,11 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode; }>) {
    return (
       <html lang="en" >
-         <body className={inter.className}>
+         <body className={`${inter.className} text-slate-800`}>
             <Layout>
-               {children}
+               <main role="main" className="container p-2">
+                  {children}
+               </main>
             </Layout>
          </body>
       </html >
