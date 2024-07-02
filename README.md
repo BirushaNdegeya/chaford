@@ -1,6 +1,6 @@
 # CHAFORD | Charity For Development
 
-![](./public/assets/chaford-landing-page.png)
+![](./public/chaford-landing-page.png)
 
 ## Charity For Development | Non profit Organization
 
