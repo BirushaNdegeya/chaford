@@ -1,63 +1,69 @@
-import React from 'react';
-// import { Container, Col, Row } from 'react-bootstrap';
 import { TfiEmail } from "react-icons/tfi";
 import { PiPhoneCallFill } from "react-icons/pi";
-import { FaLocationDot } from 'react-icons/fa6'
+import { FaLocationDot } from 'react-icons/fa6';
+import { useForm, SubmitHandler } from 'react-hook-form';
 import {
    FaFacebook,
    FaLinkedin,
    FaTwitter,
    FaYoutube
 } from "react-icons/fa";
+
 import Link from 'next/link';
-// import { Link } from 'react-router-dom';
-// import './contact.css';
 
 
 export default function HowToHelp() {
+   // const { handleSubmit, reset, register } = useForm<{ 
+   //    nom: string;
+   //    email: string;
+   //    message: string;
+   // }>();
+   // const onSubmit: SubmitHandler<{
+   //    nom: string;
+   //    email: string;
+   //    message: string;
+   // }> = (data: any) => {
+   //    console.log(data);
+   //    console.log('data arrived');
+   //    reset();
+   // }
    return (
       <div>
-         <h1 className=''>Nous Contactez</h1>
-         <div>
-            <div className='my-5'>
+         <h1 className="text-blue-500 text-xl font-medium my-2 text-center">Ecrivez Nous un message</h1>
+         <form className="flex flex-col gap-6 py-6 bg-gray-200">
+            <input
+               type="text"
+               // {...register('nom')}
+               placeholder="Entrez votre Nom"
+               className="bg-slate-500 p-3 text-gray-50 outline-none"
+            />
+            <input
+               type="email"
+               // {...register('email')}
+               placeholder="birushandegeya@gmail.com"
+               className="bg-slate-500 p-3 text-gray-50 outline-none"
+            />
+            <textarea
+               // {...register('message')}
+               className="bg-slate-500 p-3 text-gray-50 outline-none resize-none"
+            >
+               Ecrivez-nous ici!
+            </textarea>
+            <button type="submit" className="bg-blue-500">Envoyez</button>
+         </form>
+
+         <section>
+            <h2 className="text-blue-500 text-xl font-medium my-2 text-center">Suivez nous!</h2>
+            <div>
                <div>
-                  <div className='contact-wrapper'>
-                     <h2 className='mb-3'>Ecrivez Nous un message</h2>
-                     <div className="form-wrapper">
-                        <div className="mb-3">
-                           <label htmlFor="userName" className="form-label">Votre Nom</label>
-                           <input type="text" className="form-control" placeholder="Nom" />
-                        </div>
-                        <div className="mb-3">
-                           <label htmlFor="exampleFormControlInput1" className="form-label">Votre Email address</label>
-                           <input type="email" className="form-control" id="userEmail" placeholder="bill@gmail.com" />
-                        </div>
-                        <div className="mb-3">
-                           <label htmlFor="exampleFormControlTextarea1" className="form-label">Ecrivez Nous Votre Message</label>
-                           <textarea className="form-control" id="exampleFormControlTextarea1"></textarea>
-                        </div>
-                        <button className="btn btn-primary">Envoyez</button>
-                     </div>
+                  <PiPhoneCallFill />
+                  <div>
+                     <p>TELEPHONE</p>
+                     <p>+243 971 616 131</p>
                   </div>
-               </div>
-               <div className='loc-wrapper'>
-                  <h2 className='mb-3'>Nous Parler</h2>
-                  <div className='loc-line'>
-                     <TfiEmail />
-                     <div>
-                        <p>EMAIL</p>
-                        <p>chaford2024@gmail.com</p>
-                     </div>
-                  </div>
-
-                  <div className='loc-line'>
-                     <PiPhoneCallFill />
-                     <div>
-                        <p>TELEPHONE</p>
-                        <p>+243 971 616 131</p>
-                     </div>
-                  </div>
-
+                  <Link href={'/'}>
+                     <FaFacebook />
+                  </Link>
                   <div className='loc-line'>
                      <FaLocationDot />
                      <div>
@@ -66,32 +72,9 @@ export default function HowToHelp() {
                         <p>GOMA, NDOSHO</p>
                      </div>
                   </div>
-
-                  <h4 className='my-3'>Suivez nous sur:</h4>
-                  <div className="conct-social">
-                     <Link href={'/'}>
-                        <FaFacebook />
-                     </Link>
-                     <Link href={'/'}>
-                        <FaYoutube />
-                     </Link>
-                     <Link href={'/'}>
-                        <FaTwitter />
-                     </Link>
-                     <Link href={'/'}>
-                        <FaLinkedin />
-                     </Link>
-                  </div>
                </div>
             </div>
-         </div>
+         </section>
       </div>
-
    );
 }
-
-
-
-
-
-

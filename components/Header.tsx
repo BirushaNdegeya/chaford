@@ -5,9 +5,8 @@ import Hambuger from './Hambuger';
 
 
 export default function Header() {
-   const colors = 'bg-[#052c65]'
    return (
-      <header className="shadow-sm border-b border-gray-200 sticky top-0 h-16 flex items-center justify-between px-2 bg-gray-50">
+      <header className="sticky top-0 h-16 flex items-center justify-between px-2 bg-blue-500 text-gray-50 shadow-md">
          <div className='flex items-center justify-between container'>
             <Link href={'/'} className='flex items-center gap-2 font-medium text-2xl'>
                <Logo />

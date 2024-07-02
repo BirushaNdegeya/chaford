@@ -14,14 +14,14 @@ export default function Hambuger() {
          {isOpen ? (
             <AiFillCloseSquare
                size={40}
-               className='fill-slate-800'
+               className='fill-gray-50'
             />
 
          ) : (
 
             <AiOutlineMenu
                size={40}
-               className='fill-slate-800'
+               className='fill-gray-50'
             />
          )}
       </div>
